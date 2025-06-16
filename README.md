@@ -14,8 +14,8 @@ This repository contains my Java backend development learning journey. It includ
 - ✅ Postman Testing
 - ✅ PostgreSQL Setup
 - ✅ Maven & Project Structure
-- ✅ Docker Basics (in progress)
-- ✅ AWS Basics (in progress)
+- ✅ Docker Basics 
+- ✅ AWS Basics 
 
 ## 🛠️ Tools & Technologies
 
@@ -32,6 +32,7 @@ This repository contains my Java backend development learning journey. It includ
 ## 🚧 Ongoing
 
 I'm updating this repository daily as I continue to learn. All code is written and tested locally before being pushed.
+- ✅ [Spring Boot Intro (Amigoscode)](./spring-boot-intro)
 
 ## 📌 Goals
 
