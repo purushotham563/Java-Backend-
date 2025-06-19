@@ -50,15 +50,15 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-//    private List<@NotBlank String> pre;
+    private List<@NotBlank String> pre;
 
     public String getName() {
         return name;
     }
-//    private LocalDate dateOfBirth;
-//    public Optional<@Past LocalDate>getDateOfBirth(){
-//        return Optional.of(dateOfBirth);
-//    }
+    private LocalDate dateOfBirth;
+    public Optional<@Past LocalDate>getDateOfBirth(){
+        return Optional.of(dateOfBirth);
+    }
 
 
     public boolean isWorking() {
