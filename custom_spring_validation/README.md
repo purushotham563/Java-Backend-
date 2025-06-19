@@ -7,12 +7,9 @@ This project demonstrates **custom Java Bean Validation** with MySQL integration
 
 - ✅ **Custom validation** with `@ContactNumberConstraint` annotation
 - 🛡️ Bean Validation using standard annotations (`@NotNull`, `@Email`, etc.)
-- 🚨 Global Exception Handling with `@ControllerAdvice`
 - 🗃️ Spring Data JPA with MySQL integration
 - 🏗️ Clean layered architecture:
   - Controller → Service → Repository
-- 📝 Swagger API documentation (optional)
-- 🧪 Test setup with `ValidationTesting.java`
 
 ## 🛠️ Tech Stack
 
@@ -22,50 +19,29 @@ This project demonstrates **custom Java Bean Validation** with MySQL integration
 - Spring Data JPA
 - MySQL 8.x
 - Maven
-- Lombok (recommended addition)
 
 ## 📂 Project Structure
 
 ```
-com.validation.validation
+src/main/java/com/validation/validation/
 ├── annotation/
-│   ├── ContactNumberConstraint.java     # Custom validation annotation
-│   └── ContactNumberValidator.java      # Validator implementation
+│   ├── ContactNumberConstraint.java
+│   └── ContactNumberValidator.java
 ├── config/
-│   └── SwaggerConfig.java               # API documentation
+│   └── SwaggerConfig.java
 ├── controller/
-│   └── UserController.java              # REST endpoints
-├── dto/
-│   └── UserRequest.java                 # Validation-annotated DTO
+│   └── UserController.java
 ├── exception/
-│   └── GlobalExceptionHandler.java      # Centralized error handling
+│   └── GlobalExceptionHandler.java
 ├── model/
-│   └── User.java                        # JPA Entity
+│   └── User.java
 ├── repository/
-│   └── UserRepository.java              # Data access layer
+│   └── UserRepository.java
 ├── service/
-│   └── UserService.java                 # Business logic
+│   └── UserService.java
 └── ValidationInJavaAndSpringApplication.java
 ```
 
-## 🔌 MySQL Configuration
-
-Configure `application.properties`:
-
-```properties
-# Datasource
-spring.datasource.url=jdbc:mysql://localhost:3306/validation_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-
-# JPA
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-
-# Optional: Show validation errors
-server.error.include-message=always
-```
 
 ## 🚀 Running the Application
 
@@ -82,11 +58,10 @@ Or in IDE:
 
 ## 📡 API Endpoints
 
-| Method | Endpoint        | Description         | Validation Rules                     |
+| Method | Endpoint         | Description         | Validation Rules                     |
 |--------|------------------|---------------------|--------------------------------------|
-| POST   | `/api/users`     | Create new user     | Phone format, email, name required   |
-| GET    | `/api/users`     | List all users      | -                                    |
-| GET    | `/api/users/{id}`| Get user by ID      | Valid UUID check                     |
+| POST   | `/users`         | Create new user     | Phone format, email, name required   |
+                 
 
 ### ✅ Sample Valid Request
 
