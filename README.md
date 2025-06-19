@@ -33,6 +33,7 @@ This repository contains my Java backend development learning journey. It includ
 
 I'm updating this repository daily as I continue to learn. All code is written and tested locally before being pushed.
 - ✅ [Spring Boot Intro (Amigoscode)](./spring-boot-intro)
+- ✅ [Spring Boot Quickstart (Java Brains)](./spring-quickstart)
 
 ## 📌 Goals
 
