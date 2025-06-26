@@ -33,17 +33,7 @@ com.validation.validation
 └── ValidationTesting.java
 ```
 
-## 🔌 MySQL Configuration
 
-Edit `src/main/resources/application.properties` with your MySQL credentials:
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/your_db
-spring.datasource.username=root
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-```
 
 ## 🚀 Running the App
 
@@ -56,8 +46,7 @@ Or use IntelliJ IDEA to run the `ValidationInJavaAndSpringApplication` class.
 ## 📤 API Endpoints
 
 - `POST /users` – Create a new user (validates body)
-- `GET /users` – Get all users
-- `GET /users/{id}` – Get user by ID
+
 
 ## 🙋‍♂️ Author
 
