@@ -36,6 +36,7 @@ I'm updating this repository daily as I continue to learn. All code is written a
 - ✅ [Spring Boot Quickstart (Java Brains)](./spring-quickstart)
 - ✅ [Java Spring Validation(baeldung)](./java-validation)
 - ✅ [custom Spring Validation(baeldung)](./custom_spring_validation)
+- ✅ [SprindDataJPA](./SpringDataJPA)
 
 ## 📌 Goals
 
