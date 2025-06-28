@@ -61,12 +61,6 @@ src/
 ./mvnw spring-boot:run
 ```
 
-Access H2 database console at:
-
-- `http://localhost:8080/h2-console`
-- JDBC URL: `jdbc:h2:mem:testdb`
-- User: `sa`
-- Password: *(blank)*
 
 ## 💡 Sample Use Cases
 
@@ -82,14 +76,6 @@ Access H2 database console at:
 - Practice of entity lifecycle: `merge`, `detach`, `remove`
 - Full control over cascade types and fetch strategies
 
-## 📌 Next Steps (Suggestions)
-
-- Add REST APIs using Spring Web
-- Replace H2 with PostgreSQL or MySQL
-- Use DTOs and mapping with MapStruct or ModelMapper
-- Add tests using JUnit and Mockito
-
----
 
 ## 🧑‍💻 Author
 
