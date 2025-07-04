@@ -10,7 +10,7 @@ This is a Spring Boot application that demonstrates **authentication** and **aut
 - Spring Boot
 - Spring Security
 - Spring Data JPA
-- H2 / MySQL (configurable)
+- MySQL
 - Maven
 
 ---
@@ -83,7 +83,7 @@ spring-security-jpa
 ## 📄 application.properties Example
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/springsec
+spring.datasource.url=jdbc:mysql://localhost:3306/springsecurity
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
