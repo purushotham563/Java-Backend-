@@ -36,6 +36,11 @@ I'm updating this repository daily as I continue to learn. All code is written a
 - ✅ [Spring Boot Quickstart (Java Brains)](./spring-quickstart)
 - ✅ [Java Spring Validation(baeldung)](./java-validation)
 - ✅ [custom Spring Validation(baeldung)](./custom_spring_validation)
+- ✅ [SpringDataJPA(Amigoscode](./SpringDataJPA)
+- ✅ [SpringBootMasterClass](./SpringBootMasterClass)
+- ✅ [Spring-security-jpa(Java Brains)](./spring-security-jpa)
+- ✅ [SpringSecurityJWT(Java Brains)](./spring-security-jwt)
+- ✅ [softwareTesting(Amigoscode)](./software-testing)
 
 ## 📌 Goals
 
