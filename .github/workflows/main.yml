@@ -8,12 +8,15 @@ on:
 
 env:
   DOCKER_REGISTRY: docker.io
-  DOCKER_IMAGE_NAME: purushotham563/docker-private-repo
+  DOCKER_IMAGE_NAME: purushotham563/private-docker-repo
 
 jobs:
   test:
     runs-on: ubuntu-latest
     name: Run Tests
+    defaults:
+      run:
+        working-directory: ./simple-java-app  
     
     steps:
     - uses: actions/checkout@v3
@@ -38,14 +41,17 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    defaults:
+      run:
+        working-directory: ./simple-java-app  
     
     steps:
     - uses: actions/checkout@v3
     
-    - name: Set up JDK 11
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
-        java-version: '11'
+        java-version: '17'
         distribution: 'temurin'
         
     - name: Cache Maven packages
@@ -78,8 +84,9 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
       with:
-        context: .
-        file: ./Dockerfile
+        context: ./simple-java-app  
+        file: ./simple-java-app/Dockerfile  
         push: true
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
+
