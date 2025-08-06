@@ -8,6 +8,7 @@ This repository contains my Java backend development learning journey. It includ
 - ✅ Validation 
 - ✅ REST API Development
 - ✅ Spring data JPA
+- ✅ DTO and mappings 
 - ✅ h2 and postgresql
 - ✅ MySQL Integration
 - ✅ JPA & Hibernate
