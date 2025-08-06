@@ -5,7 +5,7 @@ A Java application with automated testing and Docker deployment using GitHub Act
 ## 🚀 Quick Start
 
 1. **Clone & Build**
-git clone https://github.com/your-username/simple-java-app.git
+git clone https://github.com/purushotham563/Java-Backend-/simple-java-app.git
 cd simple-java-app
 mvn clean package
 java -jar target/simple-java-app-1.0.0.jar
