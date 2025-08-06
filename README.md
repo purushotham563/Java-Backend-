@@ -3,19 +3,22 @@
 This repository contains my Java backend development learning journey. It includes code examples, mini-projects, and hands-on implementations of key backend technologies, tools, and frameworks.
 
 ## 📚 Contents
-
-- ✅ Core Java (OOP, Collections, Exceptions, Threads)
-- ✅ JDBC (Java Database Connectivity)
-- ✅ MySQL Integration
-- ✅ Spring Boot Basics
+- ✅ Spring Boot
+- ✅ Exception handling
+- ✅ Validation 
 - ✅ REST API Development
+- ✅ Spring data JPA
+- ✅ h2 and postgresql
+- ✅ MySQL Integration
 - ✅ JPA & Hibernate
-- ✅ CRUD Operations
-- ✅ Postman Testing
-- ✅ PostgreSQL Setup
+- ✅ CRUD Operationsp
 - ✅ Maven & Project Structure
-- ✅ Docker Basics 
-- ✅ AWS Basics 
+- ✅ Caffeine
+- ✅ Spring Security and JWT
+- ✅ Testing(Juniy , Mockito TTD etc)
+- ✅ CI CD
+- ✅ Docker
+- ✅ AWS(Currently Learning)
 
 ## 🛠️ Tools & Technologies
 
