@@ -25,13 +25,24 @@ This repository contains my Java backend development learning journey. It includ
 
 - Java 17+
 - Spring Boot
+- Rest API
+- Hibernate
+- Junit
+- Mokito
+- TTD
+- Spring Security
+- JWT
+- oAuth 2
+- Validation
+- Exception Handling
+- DTO and Mapping
 - MySQL/PostgreSQL
 - Hibernate / JPA
-- Postman
-- IntelliJ IDEA / VS Code
+- IntelliJ IDEA 
 - Git & GitHub
-- Docker (learning)
-- AWS EC2 / S3 (learning)
+- CI CD
+- Docker 
+- AWS (learning)
 
 ## 🚧 Ongoing
 
