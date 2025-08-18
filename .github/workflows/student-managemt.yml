@@ -26,9 +26,13 @@ jobs:
           cd studentAPI/studentAPI
           mvn -B clean package -DskipTests
 
+      - name: Copy JAR to Docker context
+        run: |
+          cp studentAPI/studentAPI/target/*.jar studentAPI/
+
       - name: Build Docker image
         run: |
-          cd studentAPI/studentAPI
+          cd studentAPI
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/student-management:latest \
                        -t ${{ secrets.DOCKERHUB_USERNAME }}/student-management:${{ github.sha }} .
 
@@ -42,3 +46,4 @@ jobs:
         run: |
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/student-management:latest
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/student-management:${{ github.sha }}
+
