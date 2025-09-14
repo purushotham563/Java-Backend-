@@ -33,12 +33,18 @@ class PaymentIntegrationTest {
     @Test
     void itShouldCreatePaymentSuccessfully() throws Exception {
         UUID customerId = UUID.randomUUID();
-        Customer customer = new Customer(customerId, "James", "+447000000000");
-        CustomerRegistrationRequest customerRegistrationRequest = new CustomerRegistrationRequest(customer);
+        Customer customer = new Customer(customerId, "James",
+                "+447000000000");
+        CustomerRegistrationRequest customerRegistrationRequest =
+                new CustomerRegistrationRequest(customer);
         Payment payment = new Payment((Long)null, customerId, new BigDecimal("100.00"), Currency.GBP, "x0x0x0x0", "zakat");
         PaymentRequest paymentRequest = new PaymentRequest(payment);
-        ResultActions customerRegResultActions = this.mockMvc.perform(MockMvcRequestBuilders.put("/api/v1/customer-registration", new Object[0]).contentType(MediaType.APPLICATION_JSON).content((String)Objects.requireNonNull(this.objectToJson(customerRegistrationRequest))));
-        ResultActions payemntResultActions = this.mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/payment", new Object[0]).contentType(MediaType.APPLICATION_JSON).content((String)Objects.requireNonNull(this.objectToJson(paymentRequest))));
+        ResultActions customerRegResultActions = this.mockMvc.perform(MockMvcRequestBuilders.put("/api/v1/customer-registration", new Object[0]).
+                contentType(MediaType.APPLICATION_JSON).
+                content((String)Objects.requireNonNull(
+                        this.objectToJson(customerRegistrationRequest))));
+        ResultActions payemntResultActions = this.mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/payment", new Object[0]).contentType(MediaType.APPLICATION_JSON).content((String)Objects.
+                requireNonNull(this.objectToJson(paymentRequest))));
         customerRegResultActions.andExpect(MockMvcResultMatchers.status().isOk());
         Payment savedPayment = (Payment)this.paymentRepository.findAll().iterator().next();
         Assertions.assertThat(savedPayment.getCustomerId()).isEqualTo(customerId);
